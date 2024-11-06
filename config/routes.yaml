@@ -1,0 +1,21 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+homepage:
+    path: /
+    controller: App\Controller\DefaultController::index
+
+film_create:
+    path: /film/create
+    controller: App\Controller\FilmController::create
+
+film_update:
+    path: /film/update/{id}
+    controller: App\Controller\FilmController::update
+
+film_delete:
+    path: /film/delete/{id}
+    controller: App\Controller\FilmController::delete
